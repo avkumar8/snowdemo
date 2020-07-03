@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="vehicle" max_length="40" name="x_11300_snowgitdem_vehicle" type="collection">
+        <element label="Model" max_length="40" name="model" type="string"/>
+        <element label="Owner" max_length="32" name="owner" reference="sys_user" type="reference"/>
+        <element display="true" label="Vehicle Number" max_length="40" name="vehicle_number" type="string"/>
+        <index name="index">
+            <element name="owner"/>
+        </index>
+    </element>
+</database>
